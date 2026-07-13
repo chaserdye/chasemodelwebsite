@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Chase Dye — Fitness Model</title>
+<title>Chase Dye: Fitness Model</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
@@ -434,6 +434,719 @@ footer p {
 
 footer span { color: var(--lime); }
 
+/* =====================
+   BRANDING TAB
+   ===================== */
+
+.brand-section {
+  margin-bottom: 64px;
+}
+
+.section-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--lime);
+  margin-bottom: 10px;
+}
+
+.brand-section > h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 28px;
+  letter-spacing: 0.06em;
+  color: var(--white);
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.story-copy p {
+  font-size: 15px;
+  color: var(--mid);
+  font-weight: 300;
+  line-height: 1.8;
+  margin-bottom: 14px;
+}
+
+.story-copy p:last-child { margin-bottom: 0; }
+
+.simple-answer {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 28px 32px;
+  margin-top: 20px;
+}
+
+.simple-answer p {
+  font-size: 15px;
+  color: var(--mid);
+  font-weight: 300;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.section-intro {
+  font-size: 15px;
+  color: var(--mid);
+  font-weight: 300;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+/* Trait grid (personality) */
+.trait-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+  margin-bottom: 20px;
+}
+
+.trait-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 28px 22px;
+  position: relative;
+}
+
+.trait-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--lime);
+}
+
+.trait-card > span {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 36px;
+  color: rgba(200,244,0,0.08);
+  line-height: 1;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.trait-card h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.08em;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.trait-card p {
+  font-size: 13px;
+  color: var(--mid);
+  font-weight: 300;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Brand Voice */
+.voice-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+}
+
+.voice-description {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 28px 32px;
+}
+
+.voice-description p {
+  font-size: 15px;
+  color: var(--mid);
+  font-weight: 300;
+  line-height: 1.8;
+  margin-bottom: 14px;
+}
+
+.voice-description p:last-child { margin-bottom: 0; }
+
+.voice-example {
+  background: var(--elevated);
+  border: 1px solid var(--border);
+  padding: 28px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.example-heading {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--lime);
+  margin-bottom: 14px;
+}
+
+.voice-example blockquote {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  line-height: 1.3;
+  margin-bottom: 16px;
+  border-left: 3px solid var(--lime);
+  padding-left: 16px;
+}
+
+.voice-example > p {
+  font-size: 13px;
+  color: var(--mid);
+  font-weight: 300;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Brand Values */
+.value-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+}
+
+.value-list > div {
+  background: var(--elevated);
+  padding: 28px 30px;
+}
+
+.value-list strong {
+  display: block;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  color: var(--lime);
+  margin-bottom: 8px;
+}
+
+.value-list p {
+  font-size: 14px;
+  color: var(--mid);
+  font-weight: 300;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Style guide heading */
+.style-guide-heading {
+  margin-bottom: 56px;
+  padding-top: 48px;
+  border-top: 1px solid var(--border);
+}
+
+.style-guide-heading h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(42px, 6vw, 72px);
+  letter-spacing: 0.04em;
+  color: var(--white);
+  line-height: 0.9;
+  margin-bottom: 16px;
+}
+
+.style-guide-heading h2 em {
+  font-style: normal;
+  color: var(--lime);
+}
+
+.style-guide-heading > p {
+  font-size: 15px;
+  color: var(--mid);
+  font-weight: 300;
+  line-height: 1.8;
+  max-width: 600px;
+  margin-top: 16px;
+}
+
+/* Logo section */
+.primary-logo-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  margin-bottom: 2px;
+}
+
+.main-logo {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo-name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 42px;
+  letter-spacing: 0.12em;
+  color: var(--white);
+  display: block;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.logo-tagline {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--mid);
+  display: block;
+}
+
+.logo-explanation {
+  background: var(--elevated);
+  border: 1px solid var(--border);
+  padding: 32px 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo-explanation h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.08em;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.logo-explanation p {
+  font-size: 14px;
+  color: var(--mid);
+  font-weight: 300;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.secondary-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.logo-option {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 32px 28px;
+  text-align: center;
+}
+
+.logo-circle {
+  width: 72px;
+  height: 72px;
+  border: 2px solid var(--lime);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.logo-circle span {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 26px;
+  letter-spacing: 0.06em;
+  color: var(--lime);
+}
+
+.logo-wordmark {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 32px;
+  letter-spacing: 0.14em;
+  color: var(--white);
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.logo-outline {
+  width: 72px;
+  height: 72px;
+  border: 2px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.logo-outline span {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 38px;
+  color: var(--white);
+  line-height: 1;
+}
+
+.logo-option h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+
+.logo-option p {
+  font-size: 13px;
+  color: var(--mid);
+  font-weight: 300;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Color palette */
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+}
+
+.color-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 24px;
+}
+
+.color-swatch {
+  width: 100%;
+  height: 80px;
+  border-radius: 2px;
+  margin-bottom: 16px;
+}
+
+.color-black  { background: #111111; border: 1px solid rgba(255,255,255,0.06); }
+.color-white  { background: #F5F2ED; }
+.color-tan    { background: #B68A4C; }
+.color-gray   { background: #6F7378; }
+
+.color-card h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  color: var(--white);
+  margin-bottom: 4px;
+}
+
+.color-card p {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--lime);
+  margin-bottom: 6px;
+}
+
+.color-card small {
+  font-size: 12px;
+  color: var(--mid);
+  font-weight: 300;
+}
+
+/* Typography */
+.font-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.font-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 28px;
+}
+
+.font-use {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--lime);
+  margin-bottom: 8px;
+}
+
+.font-card h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.alphabet {
+  font-size: 28px;
+  color: var(--white);
+  line-height: 1.4;
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.font-card > p {
+  font-size: 13px;
+  color: var(--mid);
+  font-weight: 300;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Photo moodboard */
+.photo-moodboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.photo-moodboard figure {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4/5;
+}
+
+.photo-moodboard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.photo-moodboard figure:hover img {
+  transform: scale(1.03);
+}
+
+.photo-moodboard figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 14px;
+  background: rgba(10,10,10,0.75);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--mid);
+}
+
+/* Graphic examples grid */
+.graphic-example-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  margin-bottom: 20px;
+}
+
+.graphic-example {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 160px;
+  gap: 8px;
+}
+
+.graphic-example span,
+.graphic-example small {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--mid);
+}
+
+.graphic-example strong {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 28px;
+  letter-spacing: 0.06em;
+  color: var(--white);
+  line-height: 1.1;
+}
+
+.quote-graphic { border-top: 3px solid var(--lime); }
+.promo-graphic { background: var(--elevated); }
+.number-graphic strong { color: var(--lime); }
+
+/* =====================
+   CREATE TAB
+   ===================== */
+
+.create-header {
+  margin-bottom: 56px;
+}
+
+.create-header h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 28px;
+  letter-spacing: 0.06em;
+  color: var(--white);
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.create-header > p {
+  font-size: 15px;
+  color: var(--mid);
+  font-weight: 300;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.create-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.create-info > div {
+  background: var(--elevated);
+  padding: 20px 24px;
+}
+
+.create-info h4 {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--lime);
+  margin-bottom: 8px;
+}
+
+.create-info p {
+  font-size: 13.5px;
+  color: var(--mid);
+  font-weight: 300;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Post grid */
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+  margin-bottom: 56px;
+}
+
+.post {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.post-number {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--lime);
+  padding: 20px 28px 0;
+}
+
+.post img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  margin-top: 16px;
+}
+
+.post-placeholder {
+  width: 100%;
+  aspect-ratio: 4/3;
+  background: var(--elevated);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.post-placeholder span {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.post h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px;
+  letter-spacing: 0.06em;
+  color: var(--white);
+  padding: 20px 28px 10px;
+}
+
+.post > p {
+  font-size: 14px;
+  color: var(--mid);
+  font-weight: 300;
+  line-height: 1.75;
+  padding: 0 28px 20px;
+}
+
+.post-details {
+  border-top: 1px solid var(--border);
+  padding: 20px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.post-details p {
+  font-size: 13px;
+  color: var(--mid);
+  font-weight: 300;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.post-details strong {
+  color: var(--white);
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+
+/* Reflection block */
+.reflection {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 36px 40px;
+}
+
+.reflection h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 24px;
+  letter-spacing: 0.06em;
+  color: var(--white);
+  margin-bottom: 18px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.reflection p {
+  font-size: 15px;
+  color: var(--mid);
+  font-weight: 300;
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+.reflection p:last-child { margin-bottom: 0; }
+
+/* =====================
+   RESPONSIVE
+   ===================== */
+
 @media (max-width: 700px) {
   .hero { padding: 0 20px 48px; }
   .container { padding: 56px 20px 80px; }
@@ -445,6 +1158,17 @@ footer span { color: var(--lime); }
   .nav-links a { padding: 18px 10px; font-size: 10px; }
   .page-hero { padding: 48px 20px 40px; }
   .coming-soon { margin: 56px auto; }
+  .trait-grid { grid-template-columns: repeat(2, 1fr); }
+  .voice-layout { grid-template-columns: 1fr; }
+  .value-list { grid-template-columns: 1fr; }
+  .color-grid { grid-template-columns: repeat(2, 1fr); }
+  .font-grid { grid-template-columns: 1fr; }
+  .photo-moodboard { grid-template-columns: repeat(2, 1fr); }
+  .graphic-example-grid { grid-template-columns: repeat(2, 1fr); }
+  .primary-logo-box { grid-template-columns: 1fr; }
+  .secondary-logo-grid { grid-template-columns: 1fr; }
+  .post-grid { grid-template-columns: 1fr; }
+  .create-info { grid-template-columns: repeat(2, 1fr); }
 }
 </style>
 </head>
@@ -472,7 +1196,7 @@ footer span { color: var(--lime); }
 
   <div style="max-width:1200px;margin:0 auto;">
     <div class="hero">
-      <p class="hero-eyebrow">CS1 — Project Outline &amp; Strategy</p>
+      <p class="hero-eyebrow">CS1: Project Outline &amp; Strategy</p>
       <div class="hero-name">
         <span>CHASE</span>
         <span class="hero-rule"></span>
@@ -501,8 +1225,8 @@ footer span { color: var(--lime); }
       <p class="eyebrow">Project Focus</p>
       <div class="card">
         <h2>The Premise</h2>
-        <p>About to graduate college with multiple digital marketing firms recruiting me, I chose to walk away and pursue the career I actually want — fitness modeling. This project documents the process of building that brand from zero: choosing the visual identity, developing the messaging, creating content, and establishing a presence across the platforms where fitness talent gets discovered and hired.</p>
-        <p>This is Scenario B — rebranding from scratch. The brand is me. The product is my presence in the fitness and athletic modeling space.</p>
+        <p>About to graduate college with a digital marketing major, if I chose to walk away and pursue the career I actually want it would be: fitness modeling. This project documents the process of building that brand from zero: choosing the visual identity, developing the messaging, creating content, and establishing a presence across the platforms where fitness talent gets discovered and hired.</p>
+        <p>This is Scenario B, "rebranding from scratch". The brand is "me". The product is my presence in the fitness and athletic modeling space.</p>
       </div>
     </div>
 
@@ -510,8 +1234,8 @@ footer span { color: var(--lime); }
       <p class="eyebrow">Project Overview</p>
       <div class="card">
         <h2>What This Project Builds</h2>
-        <p>A complete content marketing strategy and personal brand built from the ground up — covering brand identity, audience development, platform strategy, visual content, video production, and written copy. Every deliverable is designed to position Chase Dye as a credible, bookable fitness model with a distinct look and a consistent online presence.</p>
-        <p>By the end of the semester, this portfolio will function like a real agency-level brand launch — one that can be shown to talent agencies, athletic brands, and sponsorship partners.</p>
+        <p>A complete content marketing strategy and personal brand built from the ground up, covering brand identity, audience development, platform strategy, visual content, video production, and written copy. Every deliverable is designed to position Chase Dye as a credible, bookable fitness model with a distinct look and a consistent online presence.</p>
+        <p>By the end of the semester, this portfolio will function like a real agency-level brand launch, one that can be shown to talent agencies, athletic brands, and sponsorship partners.</p>
       </div>
     </div>
 
@@ -520,16 +1244,16 @@ footer span { color: var(--lime); }
       <div style="background:var(--surface);border:1px solid var(--border);border-radius:4px;overflow:hidden;">
         <div class="goal-grid">
           <div class="goal-cell">
-            <h3>Goal 1 — Awareness</h3>
+            <h3>Goal 1: Awareness</h3>
             <p>Build brand recognition by publishing consistent, high-quality content across fitness-relevant platforms and establishing a professional online presence that attracts industry attention.</p>
           </div>
           <div class="goal-cell">
-            <h3>Goal 2 — Positioning</h3>
+            <h3>Goal 2: Positioning</h3>
             <p>Establish Chase Dye as a credible fitness modeling brand through a strong visual identity, compelling storytelling, and content that showcases both physique and personality.</p>
           </div>
           <div class="goal-cell" style="border-top:1px solid rgba(255,255,255,0.04);">
             <h3>Measurement</h3>
-            <p>Tracked through engagement metrics — views, impressions, likes, comments, shares, profile visits, and follower growth across Instagram, TikTok, and YouTube.</p>
+            <p>Tracked through engagement metrics: views, impressions, likes, comments, shares, profile visits, and follower growth across Instagram, TikTok, and YouTube.</p>
           </div>
           <div class="goal-cell" style="border-top:1px solid rgba(255,255,255,0.04);">
             <h3>Quality Check</h3>
@@ -546,19 +1270,19 @@ footer span { color: var(--lime); }
           <div class="pillar-letter">C</div>
           <span class="pillar-stat">30+</span>
           <h3>Create</h3>
-          <p>Original visual assets — logo, brand style guide, athletic photography, infographics, social media graphics, and promotional mockups built around the Chase Dye identity.</p>
+          <p>Original visual assets: logo, brand style guide, athletic photography, infographics, social media graphics, and promotional mockups built around the Chase Dye identity.</p>
         </div>
         <div class="pillar">
           <div class="pillar-letter">P</div>
           <span class="pillar-stat">10–15</span>
           <h3>Produce</h3>
-          <p>Videos and edited photo collections — workout content, behind-the-scenes footage, short-form reels, and athletic campaign-style shoots for social platforms.</p>
+          <p>Videos and edited photo collections: workout content, behind-the-scenes footage, short-form reels, and athletic campaign-style shoots for social platforms.</p>
         </div>
         <div class="pillar">
           <div class="pillar-letter">W</div>
           <span class="pillar-stat">15+</span>
           <h3>Write</h3>
-          <p>Written content supporting the brand — bio copy, website pages, social captions, a press release, newsletter, blog posts, and athlete brand pitch copy.</p>
+          <p>Written content supporting the brand: bio copy, website pages, social captions, a press release, newsletter, blog posts, and athlete brand pitch copy.</p>
         </div>
       </div>
     </div>
@@ -595,7 +1319,7 @@ footer span { color: var(--lime); }
 <div id="page-audience" class="page">
 
   <div class="page-hero">
-    <p class="eyebrow">CS2 — Buyer Personas &amp; Target Audience</p>
+    <p class="eyebrow">CS2: Buyer Personas &amp; Target Audience</p>
     <h1>AUDI<em>ENCE</em></h1>
   </div>
 
@@ -610,15 +1334,15 @@ footer span { color: var(--lime); }
         <h2>Who I'm Creating For</h2>
 
         <p>
-          My content is created for people who value fitness, discipline,
-          confidence, and an active lifestyle. They enjoy following athletes
-          and creators who share authentic workouts, travel, fashion, and
-          behind-the-scenes moments while inspiring others to become the best
-          version of themselves.
+          My content is created for people who value fitness and discipline,
+          Also those that value an active lifestyle. They enjoy following athletes
+          and creators who share authentic workouts and
+          behind-the-scenes moments. Inspiring others to become the best
+          version of themselves would be the overarching goal
         </p>
 
         <p>
-          My content is also designed for fitness brands, athletic apparel
+          My content is also designed for a bunch of different audiences, fitness brands, athletic apparel
           companies, supplement companies, gyms, photographers, and talent
           agencies looking for professional, high-quality visual content and
           authentic brand representation.
@@ -794,7 +1518,7 @@ footer span { color: var(--lime); }
 
   <!-- PAGE HERO -->
   <div class="page-hero">
-    <p class="eyebrow">CS4 — Brand Story</p>
+    <p class="eyebrow">CS4: Brand Story</p>
     <h1>BRAND<em>ING</em></h1>
   </div>
 
@@ -810,32 +1534,27 @@ footer span { color: var(--lime); }
 
       <div class="story-copy">
         <p>
-          My brand started with fitness because that has been a big part of my
-          life for years. As I got more interested in modeling and content
-          creation, I realized I could bring all of those interests together
-          instead of keeping them separate.
+          Fitness has been a big part of my life for years, so that's where the brand started.
+          Once I got into modeling and content creation, it made sense to pull everything together
+          instead of treating them like separate things.
         </p>
 
         <p>
-          I want my content to show fitness, modeling, travel, clothing, and
-          other parts of my everyday life. I do not want everything to look
-          overly staged or like I am trying to be somebody else. Some content
-          will be more planned out, but I also want to show the work and normal
-          moments behind it.
+          I want to post about fitness, modeling, clothing, whatever's actually going on.
+          Nothing too staged, nothing that doesn't feel like me. Some of it'll be planned out,
+          but I also want to show the less polished stuff too.
         </p>
 
         <p>
-          The main idea is improving yourself and being confident in what you
-          are working toward. Fitness helped me become more disciplined and
-          comfortable with myself, and that is something I want people to see
-          through my content.
+          The bigger idea is just getting better and being confident in what you're working toward.
+          Fitness made me more disciplined and comfortable in my own skin, and that's the thing
+          I want to come through in the content.
         </p>
 
         <p>
-          I also want the brand to help me connect with fitness, clothing,
-          lifestyle, and travel companies. My goal is to create content that
-          still feels like me while also being something a brand would feel
-          comfortable using.
+          On top of that, I want the brand to open doors with fitness, clothing, lifestyle, and
+          travel companies. The goal is content that still feels like me but that a brand would
+          actually want to be attached to.
         </p>
       </div>
     </section>
@@ -847,10 +1566,9 @@ footer span { color: var(--lime); }
 
       <div class="simple-answer">
         <p>
-          My brand combines fitness modeling with lifestyle content. It exists
-          because I want to build a career around things I already enjoy instead
-          of making content that does not fit me. The focus is showing confidence,
-          consistency, fitness, and personal growth in a way that feels real.
+          Fitness modeling mixed with lifestyle content. I'd rather build a career around things
+          I actually enjoy than force content that doesn't fit. Confidence, consistency, fitness,
+          personal growth — kept real.
         </p>
       </div>
     </section>
@@ -865,7 +1583,7 @@ footer span { color: var(--lime); }
           <span>01</span>
           <h3>Confident</h3>
           <p>
-            Comfortable being seen without needing to act better than everyone.
+            Comfortable being seen. Doesn't need to act like the best person in the room.
           </p>
         </div>
 
@@ -873,7 +1591,7 @@ footer span { color: var(--lime); }
           <span>02</span>
           <h3>Driven</h3>
           <p>
-            Always working toward something instead of just talking about it.
+            Actually working toward something, not just talking about it.
           </p>
         </div>
 
@@ -881,7 +1599,7 @@ footer span { color: var(--lime); }
           <span>03</span>
           <h3>Social</h3>
           <p>
-            Friendly, outgoing, and able to connect with different people.
+            Easy to talk to, gets along with different kinds of people.
           </p>
         </div>
 
@@ -889,18 +1607,16 @@ footer span { color: var(--lime); }
           <span>04</span>
           <h3>Active</h3>
           <p>
-            Interested in working out, traveling, being outside, and trying things.
+            Always doing something — gym, travel, outside, whatever's next.
           </p>
         </div>
       </div>
 
       <div class="simple-answer">
         <p>
-          If the brand was an actual person, they would probably be wearing
-          fitted gym clothes, swimwear, or simple streetwear. They would take
-          their goals seriously but still know how to have fun. They would not
-          like fake personalities or people who pretend to have everything
-          figured out.
+          Probably in fitted gym clothes, swimwear, or simple streetwear. Takes the goals
+          seriously but still knows how to have fun. Has no patience for people who perform
+          a personality they don't actually have.
         </p>
       </div>
     </section>
@@ -913,26 +1629,24 @@ footer span { color: var(--lime); }
       <div class="voice-layout">
         <div class="voice-description">
           <p>
-            I want the voice to sound confident and casual. It should feel like
-            I am talking normally instead of reading from an advertisement.
-            I can still motivate people, but I do not want every caption to
-            sound like a speech.
+            Confident but casual. Like I'm just talking, not reading off a script.
+            I can still push people to work harder, but I don't want every caption
+            to feel like a motivational poster.
           </p>
 
           <p>
-            The wording should usually be direct, positive, and easy to
-            understand. A little humor is fine too because that is more natural
-            for me.
+            Direct, positive, easy to read. A little humor when it fits,
+            because that's more natural for me anyway.
           </p>
         </div>
 
         <div class="voice-example">
           <p class="example-heading">Example</p>
           <blockquote>
-            “Was not really feeling this workout at first, but we got it done.”
+            “Wasn’t really feeling this workout at first, but we got it done.”
           </blockquote>
           <p>
-            This sounds more like something I would actually post.
+            That's the kind of thing I'd actually post.
           </p>
         </div>
       </div>
@@ -946,22 +1660,22 @@ footer span { color: var(--lime); }
       <div class="value-list">
         <div>
           <strong>Confidence</strong>
-          <p>Being comfortable with yourself and what you bring.</p>
+          <p>Being comfortable with yourself and what you bring to the table.</p>
         </div>
 
         <div>
           <strong>Consistency</strong>
-          <p>Continuing to show up even when motivation is lower.</p>
+          <p>Showing up even when the motivation isn't really there.</p>
         </div>
 
         <div>
           <strong>Growth</strong>
-          <p>Trying to improve without pretending to be perfect.</p>
+          <p>Getting better without pretending everything's already figured out.</p>
         </div>
 
         <div>
           <strong>Authenticity</strong>
-          <p>Creating content that still feels connected to who I am.</p>
+          <p>Content that still feels like me, not a version of me that performs for the camera.</p>
         </div>
       </div>
     </section>
@@ -971,23 +1685,21 @@ footer span { color: var(--lime); }
     ========================== -->
 
     <section class="style-guide-heading">
-      <p class="eyebrow">CS5 — Logo and Style Guide</p>
+      <p class="eyebrow">CS5: Logo and Style Guide</p>
       <h2>STYLE <em>GUIDE</em></h2>
       <p>
-        These are the visual choices I want to follow so my website and social
-        media content look like they belong together.
+        The visual rules I'm following to make sure everything looks like it came from the same place.
       </p>
     </section>
 
     <!-- LOGOS -->
     <section class="brand-section">
-      <p class="section-label">01 — Logos</p>
+      <p class="section-label">01: Logos</p>
       <h2>Logo Options</h2>
 
       <p class="section-intro">
-        I made three versions because the main logo will not fit well in every
-        space. The simpler versions can be used for profile photos, watermarks,
-        and smaller graphics.
+        Made three versions because the full logo doesn't work everywhere.
+        The simpler ones are for profile photos, watermarks, smaller stuff.
       </p>
 
       <div class="primary-logo-box">
@@ -999,9 +1711,8 @@ footer span { color: var(--lime); }
         <div class="logo-explanation">
           <h3>Main Logo</h3>
           <p>
-            This is the main version I would use on the website, media kit, and
-            larger pieces of content. I kept it simple because my photos should
-            still be the main focus.
+            Main version for the website, media kit, bigger content pieces.
+            Kept it simple so the photos do the talking.
           </p>
         </div>
       </div>
@@ -1014,7 +1725,7 @@ footer span { color: var(--lime); }
           </div>
           <h3>Initial Logo</h3>
           <p>
-            I would use this as a profile image, watermark, or small icon.
+            Profile photo, watermark, small icon situations.
           </p>
         </div>
 
@@ -1024,7 +1735,7 @@ footer span { color: var(--lime); }
           </div>
           <h3>Short Wordmark</h3>
           <p>
-            This works for social posts or places where my full name feels too long.
+            For posts where the full name feels like too much.
           </p>
         </div>
 
@@ -1034,7 +1745,7 @@ footer span { color: var(--lime); }
           </div>
           <h3>Single Letter Mark</h3>
           <p>
-            This is the simplest option and could work on clothing or story graphics.
+            Simplest version. Works on clothing, story graphics, wherever it fits.
           </p>
         </div>
 
@@ -1043,13 +1754,12 @@ footer span { color: var(--lime); }
 
     <!-- COLORS -->
     <section class="brand-section">
-      <p class="section-label">02 — Color Palette</p>
+      <p class="section-label">02: Color Palette</p>
       <h2>Colors I Chose</h2>
 
       <p class="section-intro">
-        I chose mostly neutral colors because they will work with gym, modeling,
-        travel, and clothing photos. The tan color adds some warmth so it is not
-        only black and white.
+        Mostly neutrals so they work across gym, modeling, travel, and clothing photos.
+        The tan breaks it up so it's not just black and white.
       </p>
 
       <div class="color-grid">
@@ -1087,12 +1797,11 @@ footer span { color: var(--lime); }
 
     <!-- TYPOGRAPHY/FONTS -->
     <section class="brand-section">
-      <p class="section-label">03 — Typography</p>
+      <p class="section-label">03: Typography</p>
       <h2>Fonts</h2>
 
       <p class="section-intro">
-        I wanted the fonts to be pretty simple. The heading font to be stronger and
-        stands out, while the body font is easier to read in longer sections.
+        Kept it simple. Strong heading font, readable body font. Nothing that gets in the way.
       </p>
 
       <div class="font-grid">
@@ -1105,7 +1814,7 @@ footer span { color: var(--lime); }
             123456789
           </div>
           <p>
-            Used for headings, page titles, buttons, and short statements.
+            Headings, titles, buttons, short statements.
           </p>
         </div>
 
@@ -1117,7 +1826,7 @@ footer span { color: var(--lime); }
             123456789
           </div>
           <p>
-            Used for paragraphs, captions, descriptions, and smaller information.
+            Paragraphs, captions, descriptions, anything longer.
           </p>
         </div>
 
@@ -1129,7 +1838,7 @@ footer span { color: var(--lime); }
             123456789
           </div>
           <p>
-            Used occasionally when I want something to feel more like modeling or fashion.
+            Used sparingly when I want something to feel more editorial.
           </p>
         </div>
 
@@ -1138,13 +1847,12 @@ footer span { color: var(--lime); }
 
     <!-- PHOTO STYLE -->
     <section class="brand-section">
-      <p class="section-label">04 — Photo Style</p>
+      <p class="section-label">04: Photo Style</p>
       <h2>Photography Mood Board</h2>
 
       <p class="section-intro">
-        I chose these examples because they have the type of look I want to use.
-        I like strong lighting, gym settings, outdoor photos, simple outfits,
-        and pictures that do not have too much happening in the background.
+        Strong lighting, gym settings, outdoor shots, simple outfits, clean backgrounds.
+        Nothing too busy. That's the look.
       </p>
 
       <div class="photo-moodboard">
@@ -1202,13 +1910,12 @@ footer span { color: var(--lime); }
 
     <!-- STYLE GUIDE -->
     <section class="brand-section">
-      <p class="section-label">05 — Graphic Style</p>
+      <p class="section-label">05: Graphic Style</p>
       <h2>Graphic Direction</h2>
 
       <p class="section-intro">
-        I want graphics to be clean and easy to read. I will mostly use black,
-        white, gray, and tan with large words and simple layouts. I do not want
-        to cover the photos with too many effects.
+        Clean, easy to read, big text, simple layouts. Black, white, gray, tan.
+        No heavy effects layered on top of photos.
       </p>
 
       <div class="graphic-example-grid">
@@ -1253,9 +1960,8 @@ footer span { color: var(--lime); }
 
       <div class="simple-answer">
         <p>
-          These are not supposed to be finished advertisements. They show the
-          kind of layout, wording, contrast, and colors I would pull from when
-          making actual social media graphics.
+          These aren't finished ads. They're just showing the kind of layout, wording,
+          contrast, and colors I'd pull from when making real graphics.
         </p>
       </div>
     </section>
@@ -1268,7 +1974,7 @@ footer span { color: var(--lime); }
 <div id="page-create" class="page">
 
   <div class="page-hero">
-    <p class="eyebrow">CS6 — Content Draft</p>
+    <p class="eyebrow">CS6: Content Draft</p>
     <h1>CRE<em>ATE</em></h1>
   </div>
 
@@ -1279,10 +1985,9 @@ footer span { color: var(--lime); }
       <h2>Five Instagram Content Ideas</h2>
 
       <p>
-        For this assignment, I created five Instagram post ideas that show the
-        type of content I want to make. I wanted the posts to connect to fitness,
-        confidence, lifestyle, and modeling instead of making them all feel the
-        exact same.
+        Five posts I put together for this assignment. Wanted them to actually feel different
+        from each other — fitness, confidence, lifestyle, modeling — not five versions of
+        the same thing.
       </p>
 
       <div class="create-info">
@@ -1314,7 +2019,7 @@ footer span { color: var(--lime); }
 
         <div>
           <h4>How It Fits the Strategy</h4>
-          <p>Help people discover my page, understand my brand, and want to follow</p>
+          <p>Help people find the page, get a feel for it, and actually want to stick around</p>
         </div>
 
       </div>
@@ -1337,9 +2042,8 @@ footer span { color: var(--lime); }
         <h3>You Don't Need a Perfect Workout</h3>
 
         <p>
-          Sometimes just showing up is enough. This post is meant for people who
-          feel like they need to have everything figured out before they start
-          working out.
+          Sometimes just showing up is enough. For people who feel like they need
+          everything figured out before they even start.
         </p>
 
         <div class="post-details">
@@ -1356,13 +2060,13 @@ footer span { color: var(--lime); }
 
           <p>
             <strong>Purpose:</strong>
-            Encourage people to stop overthinking and take the first step
+            Get people out of their heads and into the gym
           </p>
 
           <p>
             <strong>How it moves people forward:</strong>
-            This post can make someone feel understood and give them a reason to
-            follow my page for more realistic fitness content.
+            If someone sees this and feels understood, they're more likely to follow
+            for more of the same.
           </p>
 
         </div>
@@ -1383,8 +2087,8 @@ footer span { color: var(--lime); }
         <h3>More Than the Gym</h3>
 
         <p>
-          Fitness is a huge part of my life, but I also want people to see the
-          lifestyle, modeling, travel, and everyday side of my brand.
+          Fitness is a big part of it, but I also want people to see the lifestyle,
+          modeling, travel, and just everyday stuff.
         </p>
 
         <div class="post-details">
@@ -1401,13 +2105,12 @@ footer span { color: var(--lime); }
 
           <p>
             <strong>Purpose:</strong>
-            Show that my brand has more variety than only workout posts
+            Show there's more to the page than gym content
           </p>
 
           <p>
             <strong>How it moves people forward:</strong>
-            It helps new visitors get to know me better and makes the page feel
-            more personal instead of only focused on the gym.
+            Makes the page feel like a real person, not just a fitness account.
           </p>
 
         </div>
@@ -1428,9 +2131,8 @@ footer span { color: var(--lime); }
         <h3>Confidence Takes Practice</h3>
 
         <p>
-          This is an example of more reflective content. I want my audience to
-          think about their own experiences and how confidence is something that
-          can improve over time.
+          More reflective than the other posts. Confidence isn't something you just
+          have — it builds over time, and I think people relate to that.
         </p>
 
         <div class="post-details">
@@ -1447,14 +2149,13 @@ footer span { color: var(--lime); }
 
           <p>
             <strong>Purpose:</strong>
-            Share a message that feels relatable and gives people something to
-            think about
+            Give people something real to connect with
           </p>
 
           <p>
             <strong>How it moves people forward:</strong>
-            This type of post builds a stronger connection because it shows more
-            of my mindset and not just what I look like or what workout I am doing.
+            Shows something beyond the physical. People connect with the mindset
+            side as much as the fitness side.
           </p>
 
         </div>
@@ -1476,9 +2177,8 @@ footer span { color: var(--lime); }
         <h3>Behind the Scenes</h3>
 
         <p>
-          Most people only see the finished photo or video, but a lot usually
-          happens before the final result. I wanted one post to show the process
-          because it makes the content feel more honest and real.
+          Most people only see the finished product. This one pulls back the curtain
+          a bit — what actually goes into getting a shot.
         </p>
 
         <div class="post-details">
@@ -1495,14 +2195,13 @@ footer span { color: var(--lime); }
 
           <p>
             <strong>Purpose:</strong>
-            Show what goes into creating a finished post
+            Show the process, not just the result
           </p>
 
           <p>
             <strong>How it moves people forward:</strong>
-            Behind-the-scenes content can build trust because people get to see
-            more than the finished result. It can also keep current followers
-            interested in what I am working on.
+            People trust you more when they see how the sausage is made.
+            Keeps current followers in the loop on what's coming.
           </p>
 
         </div>
@@ -1524,10 +2223,8 @@ footer span { color: var(--lime); }
         <h3>Small Wins Add Up</h3>
 
         <p>
-          I do not think progress always comes from huge changes. Most of it
-          comes from doing small things consistently. That is something I have
-          learned through fitness, and it has carried over into other parts of
-          my life too.
+          Progress usually isn't from one big moment. It's the small stuff done
+          consistently. Learned that through fitness, but it applies everywhere.
         </p>
 
         <div class="post-details">
@@ -1544,14 +2241,13 @@ footer span { color: var(--lime); }
 
           <p>
             <strong>Purpose:</strong>
-            Remind people that progress can still happen through small actions
+            Remind people that small, consistent effort actually adds up
           </p>
 
           <p>
             <strong>How it moves people forward:</strong>
-            This post gives people realistic advice and can make them want to
-            keep following the page for more motivation that does not feel fake
-            or impossible.
+            Realistic and relatable. Makes people want to keep following
+            for advice that doesn't feel out of reach.
           </p>
 
         </div>
@@ -1565,19 +2261,17 @@ footer span { color: var(--lime); }
       <h2>How These Fit My Overall Strategy</h2>
 
       <p>
-        I wanted these posts to work together instead of feeling random. Some
-        introduce who I am, and others show more of the
-        process behind the content. If someone found my page for the first time,
-        these posts would help them understand what I am about and hopefully
-        give them a reason to stick around.
+        These aren't random. Some introduce who I am, some show the process,
+        some go a little deeper. If someone landed on my page for the first time
+        and scrolled through these, they'd get a pretty good read on what the
+        brand is about.
       </p>
 
       <p>
-        The first few posts are mainly meant to build awareness and help people
-        connect with the message. The lifestyle and behind-the-scenes posts help
-        build more trust because they show more of my personality. The
-        goal would be to turn new visitors into followers and eventually make my
-        page more useful for brand partnerships and modeling opportunities.
+        The first couple build awareness and get people connected to the message.
+        The lifestyle and behind-the-scenes ones build trust because they show more
+        personality. The end goal is turning new visitors into followers and making
+        the page something brands and agencies actually want to work with.
       </p>
 
     </div>
@@ -1588,13 +2282,13 @@ footer span { color: var(--lime); }
 <!-- WRITE -->
 <div id="page-write" class="page">
   <div class="page-hero">
-    <p class="eyebrow">CS7 — Written Content</p>
+    <p class="eyebrow">CS7: Written Content</p>
     <h1>WR<em>ITE</em></h1>
   </div>
   <div class="coming-soon">
     <div class="cs-number">07</div>
     <h2>Coming Soon</h2>
-    <p>All written content for the brand — athlete bio, website copy, social captions, a press release, newsletter, blog posts, and brand pitch copy for agencies and sponsors.</p>
+    <p>All written content for the brand: athlete bio, website copy, social captions, a press release, newsletter, blog posts, and brand pitch copy for agencies and sponsors.</p>
     <div class="status-pill"><span class="status-dot"></span>In Progress</div>
   </div>
 </div>
@@ -1603,20 +2297,20 @@ footer span { color: var(--lime); }
 <!-- PROMOTION -->
 <div id="page-promotion" class="page">
   <div class="page-hero">
-    <p class="eyebrow">CS8 — Campaign</p>
+    <p class="eyebrow">CS8: Campaign</p>
     <h1>PROMO<em>TION</em></h1>
   </div>
   <div class="coming-soon">
     <div class="cs-number">08</div>
     <h2>Coming Soon</h2>
-    <p>Promotional strategy, ad mockups, campaign planning, and distribution plans across all Chase Dye channels — organic and paid.</p>
+    <p>Promotional strategy, ad mockups, campaign planning, and distribution plans across all Chase Dye channels, both organic and paid.</p>
     <div class="status-pill"><span class="status-dot"></span>In Progress</div>
   </div>
 </div>
 
 
 <footer>
-  <p><span>Chase Dye</span> — Fitness Model &nbsp;·&nbsp; Content Strategy Portfolio</p>
+  <p><span>Chase Dye</span>: Fitness Model &nbsp;·&nbsp; Content Strategy Portfolio</p>
 </footer>
 
 <script>
