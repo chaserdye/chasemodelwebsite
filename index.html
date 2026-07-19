@@ -495,7 +495,6 @@ footer span { color: var(--lime); }
   margin-bottom: 28px;
 }
 
-/* Trait grid (personality) */
 .trait-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -545,7 +544,6 @@ footer span { color: var(--lime); }
   margin: 0;
 }
 
-/* Brand Voice */
 .voice-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -605,7 +603,6 @@ footer span { color: var(--lime); }
   margin: 0;
 }
 
-/* Brand Values */
 .value-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -634,7 +631,6 @@ footer span { color: var(--lime); }
   margin: 0;
 }
 
-/* Style guide heading */
 .style-guide-heading {
   margin-bottom: 56px;
   padding-top: 48px;
@@ -664,7 +660,6 @@ footer span { color: var(--lime); }
   margin-top: 16px;
 }
 
-/* Logo section */
 .primary-logo-box {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -798,7 +793,6 @@ footer span { color: var(--lime); }
   margin: 0;
 }
 
-/* Color palette */
 .color-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -845,7 +839,6 @@ footer span { color: var(--lime); }
   font-weight: 300;
 }
 
-/* Typography */
 .font-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -892,7 +885,6 @@ footer span { color: var(--lime); }
   margin: 0;
 }
 
-/* Photo moodboard */
 .photo-moodboard {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -931,7 +923,6 @@ footer span { color: var(--lime); }
   color: var(--mid);
 }
 
-/* Graphic examples grid */
 .graphic-example-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1025,7 +1016,6 @@ footer span { color: var(--lime); }
   margin: 0;
 }
 
-/* Post grid */
 .post-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1115,7 +1105,6 @@ footer span { color: var(--lime); }
   letter-spacing: 0.04em;
 }
 
-/* Reflection block */
 .reflection {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -1144,6 +1133,144 @@ footer span { color: var(--lime); }
 .reflection p:last-child { margin-bottom: 0; }
 
 /* =====================
+   PRODUCE TAB
+   ===================== */
+
+.produce-header {
+  margin-bottom: 56px;
+}
+
+.produce-header h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 28px;
+  letter-spacing: 0.06em;
+  color: var(--white);
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.produce-header > p {
+  font-size: 15px;
+  color: var(--mid);
+  font-weight: 300;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.produce-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  margin-bottom: 56px;
+}
+
+.produce-info > div {
+  background: var(--elevated);
+  padding: 20px 24px;
+}
+
+.produce-info h4 {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--lime);
+  margin-bottom: 8px;
+}
+
+.produce-info p {
+  font-size: 13.5px;
+  color: var(--mid);
+  font-weight: 300;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Video grid — 5 reels in a 2-col layout, last one centered */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+  margin-bottom: 56px;
+}
+
+.video-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-number {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--lime);
+  padding: 20px 28px 0;
+}
+
+.video-card video {
+  width: 100%;
+  display: block;
+  margin-top: 16px;
+  background: #000;
+  /* Reels are vertical 9:16 — cap height so card doesn't go huge */
+  max-height: 540px;
+  object-fit: contain;
+}
+
+.video-card h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px;
+  letter-spacing: 0.06em;
+  color: var(--white);
+  padding: 20px 28px 10px;
+}
+
+.video-card > p {
+  font-size: 14px;
+  color: var(--mid);
+  font-weight: 300;
+  line-height: 1.75;
+  padding: 0 28px 20px;
+  flex: 1;
+}
+
+.video-details {
+  border-top: 1px solid var(--border);
+  padding: 20px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.video-details p {
+  font-size: 13px;
+  color: var(--mid);
+  font-weight: 300;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.video-details strong {
+  color: var(--white);
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+
+/* Center the 5th card when it's alone in the last row */
+.video-grid .video-card:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  max-width: 50%;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* =====================
    RESPONSIVE
    ===================== */
 
@@ -1169,6 +1296,9 @@ footer span { color: var(--lime); }
   .secondary-logo-grid { grid-template-columns: 1fr; }
   .post-grid { grid-template-columns: 1fr; }
   .create-info { grid-template-columns: repeat(2, 1fr); }
+  .video-grid { grid-template-columns: 1fr; }
+  .video-grid .video-card:last-child:nth-child(odd) { grid-column: auto; max-width: 100%; }
+  .produce-info { grid-template-columns: repeat(2, 1fr); }
 }
 </style>
 </head>
@@ -1181,7 +1311,6 @@ footer span { color: var(--lime); }
       <li><a id="nav-outline"   class="active" onclick="showPage('outline')">Outline</a></li>
       <li><a id="nav-audience"             onclick="showPage('audience')">Audience</a></li>
       <li><a id="nav-branding"             onclick="showPage('branding')">Branding</a></li>
-      <li><a id="nav-strategy"             onclick="showPage('strategy')">Strategy</a></li>
       <li><a id="nav-create"               onclick="showPage('create')">Create</a></li>
       <li><a id="nav-produce"              onclick="showPage('produce')">Produce</a></li>
       <li><a id="nav-write"                onclick="showPage('write')">Write</a></li>
@@ -1191,9 +1320,8 @@ footer span { color: var(--lime); }
 </nav>
 
 
-<!-- OUTLINE -->
+<!-- ===================== OUTLINE ===================== -->
 <div id="page-outline" class="page active">
-
   <div style="max-width:1200px;margin:0 auto;">
     <div class="hero">
       <p class="hero-eyebrow">CS1: Project Outline &amp; Strategy</p>
@@ -1203,18 +1331,9 @@ footer span { color: var(--lime); }
         <span class="last">DYE</span>
       </div>
       <div class="hero-sub">
-        <div class="hero-descriptor">
-          <strong>Fitness</strong>
-          Modeling
-        </div>
-        <div class="hero-descriptor">
-          <strong>Brand</strong>
-          Launch
-        </div>
-        <div class="hero-descriptor">
-          <strong>Digital</strong>
-          Marketing
-        </div>
+        <div class="hero-descriptor"><strong>Fitness</strong>Modeling</div>
+        <div class="hero-descriptor"><strong>Brand</strong>Launch</div>
+        <div class="hero-descriptor"><strong>Digital</strong>Marketing</div>
       </div>
     </div>
   </div>
@@ -1291,22 +1410,10 @@ footer span { color: var(--lime); }
       <p class="eyebrow">Tools &amp; Platforms</p>
       <div class="tools-wrap">
         <div class="tools-grid">
-          <div class="tool-block">
-            <h4>Design</h4>
-            <p>Adobe Illustrator, Photoshop, Adobe Express, Canva</p>
-          </div>
-          <div class="tool-block">
-            <h4>Video &amp; Photo</h4>
-            <p>Adobe Premiere Pro, Audition, Lightroom, CapCut, DSLR camera</p>
-          </div>
-          <div class="tool-block">
-            <h4>Writing</h4>
-            <p>Google Docs, Grammarly, Google Sites</p>
-          </div>
-          <div class="tool-block">
-            <h4>Social Platforms</h4>
-            <p>Instagram, TikTok, YouTube, Facebook, LinkedIn</p>
-          </div>
+          <div class="tool-block"><h4>Design</h4><p>Adobe Illustrator, Photoshop, Adobe Express, Canva</p></div>
+          <div class="tool-block"><h4>Video &amp; Photo</h4><p>Adobe Premiere Pro, Audition, Lightroom, CapCut, DSLR camera</p></div>
+          <div class="tool-block"><h4>Writing</h4><p>Google Docs, Grammarly, Google Sites</p></div>
+          <div class="tool-block"><h4>Social Platforms</h4><p>Instagram, TikTok, YouTube, Facebook, LinkedIn</p></div>
         </div>
       </div>
     </div>
@@ -1315,653 +1422,255 @@ footer span { color: var(--lime); }
 </div>
 
 
-<!-- AUDIENCE -->
+<!-- ===================== AUDIENCE ===================== -->
 <div id="page-audience" class="page">
-
   <div class="page-hero">
     <p class="eyebrow">CS2: Buyer Personas &amp; Target Audience</p>
     <h1>AUDI<em>ENCE</em></h1>
   </div>
-
   <div class="container">
 
-    <!-- WHO I'M CREATING FOR -->
     <div class="card-group">
       <p class="eyebrow">Target Audience</p>
-
       <div class="card">
-
         <h2>Who I'm Creating For</h2>
-
-        <p>
-          My content is created for people who value fitness and discipline,
-          Also those that value an active lifestyle. They enjoy following athletes
-          and creators who share authentic workouts and
-          behind-the-scenes moments. Inspiring others to become the best
-          version of themselves would be the overarching goal
-        </p>
-
-        <p>
-          My content is also designed for a bunch of different audiences, fitness brands, athletic apparel
-          companies, supplement companies, gyms, photographers, and talent
-          agencies looking for professional, high-quality visual content and
-          authentic brand representation.
-        </p>
-
+        <p>My content is created for people who value fitness and discipline, also those that value an active lifestyle. They enjoy following athletes and creators who share authentic workouts and behind-the-scenes moments. Inspiring others to become the best version of themselves would be the overarching goal.</p>
+        <p>My content is also designed for a bunch of different audiences, fitness brands, athletic apparel companies, supplement companies, gyms, photographers, and talent agencies looking for professional, high-quality visual content and authentic brand representation.</p>
       </div>
-
     </div>
 
-
-    <!-- SNAPSHOT -->
     <div class="card-group">
-
       <p class="eyebrow">Audience Snapshot</p>
-
       <div class="goal-grid">
-
-        <div class="goal-cell">
-          <h3>Age</h3>
-          <p>18–34 years old with a strong interest in fitness, health, and lifestyle.</p>
-        </div>
-
-        <div class="goal-cell">
-          <h3>Interests</h3>
-          <p>Fitness • Nutrition • Fashion • Travel • Grooming • Personal Development</p>
-        </div>
-
-        <div class="goal-cell">
-          <h3>Platforms</h3>
-          <p>Instagram, TikTok, and YouTube where visual storytelling performs best.</p>
-        </div>
-
-        <div class="goal-cell">
-          <h3>Location</h3>
-          <p>Primarily the United States with additional audiences in Canada, Australia, and the United Kingdom.</p>
-        </div>
-
+        <div class="goal-cell"><h3>Age</h3><p>18–34 years old with a strong interest in fitness, health, and lifestyle.</p></div>
+        <div class="goal-cell"><h3>Interests</h3><p>Fitness • Nutrition • Fashion • Travel • Grooming • Personal Development</p></div>
+        <div class="goal-cell"><h3>Platforms</h3><p>Instagram, TikTok, and YouTube where visual storytelling performs best.</p></div>
+        <div class="goal-cell"><h3>Location</h3><p>Primarily the United States with additional audiences in Canada, Australia, and the United Kingdom.</p></div>
       </div>
-
     </div>
 
-
-    <!-- PERSONAS -->
     <div class="card-group">
-
       <p class="eyebrow">Audience Personas</p>
-
       <div class="pillars">
-
         <div class="pillar">
-
           <div class="pillar-letter">A</div>
-
           <span class="pillar-stat">01</span>
-
           <h3>Fitness Enthusiast</h3>
-
-          <p>
-            Loves workout content, athletic apparel, nutrition, and follows
-            creators for motivation and training ideas.
-          </p>
-
+          <p>Loves workout content, athletic apparel, nutrition, and follows creators for motivation and training ideas.</p>
         </div>
-
-
         <div class="pillar">
-
           <div class="pillar-letter">B</div>
-
           <span class="pillar-stat">02</span>
-
           <h3>Brand Partner</h3>
-
-          <p>
-            Marketing managers and agencies searching for authentic fitness
-            creators to represent products and campaigns.
-          </p>
-
+          <p>Marketing managers and agencies searching for authentic fitness creators to represent products and campaigns.</p>
         </div>
-
-
         <div class="pillar">
-
           <div class="pillar-letter">C</div>
-
           <span class="pillar-stat">03</span>
-
           <h3>Young Professional</h3>
-
-          <p>
-            Interested in healthy living, fashion, travel, and building a
-            balanced, active lifestyle.
-          </p>
-
+          <p>Interested in healthy living, fashion, travel, and building a balanced, active lifestyle.</p>
         </div>
-
       </div>
-
     </div>
 
-
-    <!-- CUSTOMER JOURNEY -->
-<div class="card-group">
-
-  <p class="eyebrow">Customer Journey</p>
-
-  <div class="card">
-
-    <h2>Customer Journey Map</h2>
-
-    <p>
-      This journey illustrates how fitness brands and agencies discover,
-      evaluate, and ultimately partner with me.
-    </p>
-
-    <img
-      src="customer-journey.png"
-      alt="Customer Journey Map"
-      style="
-        width:100%;
-        margin-top:30px;
-        border-radius:4px;
-        border:1px solid rgba(255,255,255,.08);
-      ">
-
-  </div>
-
-</div>
-
-
-    <!-- CONTENT -->
     <div class="card-group">
-
-      <p class="eyebrow">Content They Want</p>
-
-      <div class="tools-wrap">
-
-        <div class="tools-grid">
-
-          <div class="tool-block">
-            <h4>Fitness</h4>
-            <p>Workout videos, training tips, gym motivation, and athletic photography.</p>
-          </div>
-
-          <div class="tool-block">
-            <h4>Lifestyle</h4>
-            <p>Travel, routines, productivity, and behind-the-scenes content.</p>
-          </div>
-
-          <div class="tool-block">
-            <h4>Fashion</h4>
-            <p>Fitness apparel, casual style, grooming, and lifestyle photography.</p>
-          </div>
-
-          <div class="tool-block">
-            <h4>Brand Collaborations</h4>
-            <p>Authentic product integrations, sponsored campaigns, and long-term partnerships.</p>
-          </div>
-
-        </div>
-
+      <p class="eyebrow">Customer Journey</p>
+      <div class="card">
+        <h2>Customer Journey Map</h2>
+        <p>This journey illustrates how fitness brands and agencies discover, evaluate, and ultimately partner with me.</p>
+        <img src="customer-journey.png" alt="Customer Journey Map" style="width:100%;margin-top:30px;border-radius:4px;border:1px solid rgba(255,255,255,.08);">
       </div>
+    </div>
 
+    <div class="card-group">
+      <p class="eyebrow">Content They Want</p>
+      <div class="tools-wrap">
+        <div class="tools-grid">
+          <div class="tool-block"><h4>Fitness</h4><p>Workout videos, training tips, gym motivation, and athletic photography.</p></div>
+          <div class="tool-block"><h4>Lifestyle</h4><p>Travel, routines, productivity, and behind-the-scenes content.</p></div>
+          <div class="tool-block"><h4>Fashion</h4><p>Fitness apparel, casual style, grooming, and lifestyle photography.</p></div>
+          <div class="tool-block"><h4>Brand Collaborations</h4><p>Authentic product integrations, sponsored campaigns, and long-term partnerships.</p></div>
+        </div>
+      </div>
     </div>
 
   </div>
-
 </div>
 
-<!-- BRANDING -->
-<!-- BRANDING + STYLE GUIDE -->
-<div id="page-branding" class="page">
 
-  <!-- PAGE HERO -->
+<!-- ===================== BRANDING ===================== -->
+<div id="page-branding" class="page">
   <div class="page-hero">
     <p class="eyebrow">CS4: Brand Story</p>
     <h1>BRAND<em>ING</em></h1>
   </div>
-
   <div class="container brand-project">
-
-    <!-- =========================
-         BRAND STORY
-    ========================== -->
 
     <section class="brand-section">
       <p class="section-label">Overall Story</p>
       <h2>What My Brand Is About</h2>
-
       <div class="story-copy">
-        <p>
-          Fitness has been a big part of my life for years, so that's where the brand started.
-          Once I got into modeling and content creation, it made sense to pull everything together
-          instead of treating them like separate things.
-        </p>
-
-        <p>
-          I want to post about fitness, modeling, clothing, whatever's actually going on.
-          Nothing too staged, nothing that doesn't feel like me. Some of it'll be planned out,
-          but I also want to show the less polished stuff too.
-        </p>
-
-        <p>
-          The bigger idea is just getting better and being confident in what you're working toward.
-          Fitness made me more disciplined and comfortable in my own skin, and that's the thing
-          I want to come through in the content.
-        </p>
-
-        <p>
-          On top of that, I want the brand to open doors with fitness and
-          travel companies. The goal is content that still feels like me but that a brand would
-          actually want to be attached to.
-        </p>
+        <p>Fitness has been a big part of my life for years, so that's where the brand started. Once I got into modeling and content creation, it made sense to pull everything together instead of treating them like separate things.</p>
+        <p>I want to post about fitness, modeling, clothing, whatever's actually going on. Nothing too staged, nothing that doesn't feel like me. Some of it'll be planned out, but I also want to show the less polished stuff too.</p>
+        <p>The bigger idea is just getting better and being confident in what you're working toward. Fitness made me more disciplined and comfortable in my own skin, and that's the thing I want to come through in the content.</p>
+        <p>On top of that, I want the brand to open doors with fitness and travel companies. The goal is content that still feels like me but that a brand would actually want to be attached to.</p>
       </div>
     </section>
 
-    <!-- IDENTITY BRIEF -->
     <section class="brand-section">
       <p class="section-label">Identity Brief</p>
       <h2>My Main Focus</h2>
-
       <div class="simple-answer">
-        <p>
-          Fitness modeling mixed with lifestyle content. I'd rather build a career around things
-          I actually enjoy than force content that doesn't fit. Confidence, consistency, fitness,
-          personal growth, basically all of those things kept real.
-        </p>
+        <p>Fitness modeling mixed with lifestyle content. I'd rather build a career around things I actually enjoy than force content that doesn't fit. Confidence, consistency, fitness, personal growth, basically all of those things kept real.</p>
       </div>
     </section>
 
-    <!-- PERSONALITY -->
     <section class="brand-section">
       <p class="section-label">Personality</p>
       <h2>If My Brand Was a Person</h2>
-
       <div class="trait-grid">
-        <div class="trait-card">
-          <span>01</span>
-          <h3>Confident</h3>
-          <p>
-            Comfortable being seen. Doesn't need to act like the best person in the room.
-          </p>
-        </div>
-
-        <div class="trait-card">
-          <span>02</span>
-          <h3>Driven</h3>
-          <p>
-            Actually working toward something.
-          </p>
-        </div>
-
-        <div class="trait-card">
-          <span>03</span>
-          <h3>Social</h3>
-          <p>
-            Easy to talk to, gets along with different kinds of people.
-          </p>
-        </div>
-
-        <div class="trait-card">
-          <span>04</span>
-          <h3>Active</h3>
-          <p>
-            Always doing something gym, or outside, whatever's next.
-          </p>
-        </div>
+        <div class="trait-card"><span>01</span><h3>Confident</h3><p>Comfortable being seen. Doesn't need to act like the best person in the room.</p></div>
+        <div class="trait-card"><span>02</span><h3>Driven</h3><p>Actually working toward something.</p></div>
+        <div class="trait-card"><span>03</span><h3>Social</h3><p>Easy to talk to, gets along with different kinds of people.</p></div>
+        <div class="trait-card"><span>04</span><h3>Active</h3><p>Always doing something — gym, or outside, whatever's next.</p></div>
       </div>
-
       <div class="simple-answer">
-        <p>
-          Probably in fitted gym clothes, swimwear, or simple streetwear. Takes the goals
-          seriously but still knows how to have fun. Has no patience for people who perform
-          a personality they don't actually have.
-        </p>
+        <p>Probably in fitted gym clothes, swimwear, or simple streetwear. Takes the goals seriously but still knows how to have fun. Has no patience for people who perform a personality they don't actually have.</p>
       </div>
     </section>
 
-    <!-- VOICE -->
     <section class="brand-section">
       <p class="section-label">Brand Voice</p>
       <h2>How I Want It to Sound</h2>
-
       <div class="voice-layout">
         <div class="voice-description">
-          <p>
-            Confident but casual. Like I'm just talking, not reading off a script.
-            I can still push people to work harder.
-          </p>
-
-          <p>
-            Direct, positive, easy to read. A little humor when it fits,
-            because that's more natural for me anyway.
-          </p>
+          <p>Confident but casual. Like I'm just talking, not reading off a script. I can still push people to work harder.</p>
+          <p>Direct, positive, easy to read. A little humor when it fits, because that's more natural for me anyway.</p>
         </div>
-
         <div class="voice-example">
           <p class="example-heading">Example</p>
-          <blockquote>
-            “Wasn’t really feeling this workout at first, but we got it done and I feel even better now that it's over.”
-          </blockquote>
-          <p>
-            That's the kind of thing I'd actually post.
-          </p>
+          <blockquote>"Wasn't really feeling this workout at first, but we got it done and I feel even better now that it's over."</blockquote>
+          <p>That's the kind of thing I'd actually post.</p>
         </div>
       </div>
     </section>
 
-    <!-- VALUES -->
     <section class="brand-section">
       <p class="section-label">Brand Values</p>
       <h2>What Matters to Me</h2>
-
       <div class="value-list">
-        <div>
-          <strong>Confidence</strong>
-          <p>Being comfortable with yourself and what you bring to the table.</p>
-        </div>
-
-        <div>
-          <strong>Consistency</strong>
-          <p>Showing up even when the motivation isn't really there.</p>
-        </div>
-
-        <div>
-          <strong>Growth</strong>
-          <p>Getting better without pretending everything's already figured out.</p>
-        </div>
-
-        <div>
-          <strong>Authenticity</strong>
-          <p>Content that still feels like me, not a version of me that performs for the camera.</p>
-        </div>
+        <div><strong>Confidence</strong><p>Being comfortable with yourself and what you bring to the table.</p></div>
+        <div><strong>Consistency</strong><p>Showing up even when the motivation isn't really there.</p></div>
+        <div><strong>Growth</strong><p>Getting better without pretending everything's already figured out.</p></div>
+        <div><strong>Authenticity</strong><p>Content that still feels like me, not a version of me that performs for the camera.</p></div>
       </div>
     </section>
-
-    <!-- =========================
-         STYLE GUIDE
-    ========================== -->
 
     <section class="style-guide-heading">
       <p class="eyebrow">CS5: Logo and Style Guide</p>
       <h2>STYLE <em>GUIDE</em></h2>
-      <p>
-        The visual rules I'm following to make sure everything looks like it came from the same place.
-      </p>
+      <p>The visual rules I'm following to make sure everything looks like it came from the same place.</p>
     </section>
 
-    <!-- LOGOS -->
     <section class="brand-section">
       <p class="section-label">01: Logos</p>
       <h2>Logo Options</h2>
-
-      <p class="section-intro">
-        Made three versions because the full logo doesn't work everywhere.
-        The simpler ones are for profile photos, watermarks, smaller stuff.
-      </p>
-
+      <p class="section-intro">Made three versions because the full logo doesn't work everywhere. The simpler ones are for profile photos, watermarks, smaller stuff.</p>
       <div class="primary-logo-box">
         <div class="main-logo">
           <span class="logo-name">CHASE DYE</span>
           <span class="logo-tagline">FITNESS · MODELING · LIFESTYLE</span>
         </div>
-
         <div class="logo-explanation">
           <h3>Main Logo</h3>
-          <p>
-            Main version for the website, bigger content pieces.
-            Kept it simple so the photos do the talking.
-          </p>
+          <p>Main version for the website, bigger content pieces. Kept it simple so the photos do the talking.</p>
         </div>
       </div>
-
       <div class="secondary-logo-grid">
-
         <div class="logo-option">
-          <div class="logo-circle">
-            <span>CD</span>
-          </div>
+          <div class="logo-circle"><span>CD</span></div>
           <h3>Initial Logo</h3>
-          <p>
-            Profile photo, watermark, small icon situations.
-          </p>
+          <p>Profile photo, watermark, small icon situations.</p>
         </div>
-
         <div class="logo-option">
-          <div class="logo-wordmark">
-            CHASE
-          </div>
+          <div class="logo-wordmark">CHASE</div>
           <h3>Short Wordmark</h3>
-          <p>
-            For posts where the full name feels like too much.
-          </p>
+          <p>For posts where the full name feels like too much.</p>
         </div>
-
         <div class="logo-option">
-          <div class="logo-outline">
-            <span>C</span>
-          </div>
+          <div class="logo-outline"><span>C</span></div>
           <h3>Single Letter Mark</h3>
-          <p>
-            Simplest version. Works on clothing, story graphics, wherever it fits.
-          </p>
+          <p>Simplest version. Works on clothing, story graphics, wherever it fits.</p>
         </div>
-
       </div>
     </section>
 
-    <!-- COLORS -->
     <section class="brand-section">
       <p class="section-label">02: Color Palette</p>
       <h2>Colors I Chose</h2>
-
-      <p class="section-intro">
-        Mostly neutrals so they work across gym, modeling and clothing photos.
-        The tan breaks it up so it's not just black and white.
-      </p>
-
+      <p class="section-intro">Mostly neutrals so they work across gym, modeling and clothing photos. The tan breaks it up so it's not just black and white.</p>
       <div class="color-grid">
-
-        <div class="color-card">
-          <div class="color-swatch color-black"></div>
-          <h3>Matte Black</h3>
-          <p>#111111</p>
-          <small>Main backgrounds and text</small>
-        </div>
-
-        <div class="color-card">
-          <div class="color-swatch color-white"></div>
-          <h3>Soft White</h3>
-          <p>#F5F2ED</p>
-          <small>Page backgrounds and contrast</small>
-        </div>
-
-        <div class="color-card">
-          <div class="color-swatch color-tan"></div>
-          <h3>Warm Tan</h3>
-          <p>#B68A4C</p>
-          <small>Buttons, details, and accents</small>
-        </div>
-
-        <div class="color-card">
-          <div class="color-swatch color-gray"></div>
-          <h3>Steel Gray</h3>
-          <p>#6F7378</p>
-          <small>Secondary text and backgrounds</small>
-        </div>
-
+        <div class="color-card"><div class="color-swatch color-black"></div><h3>Matte Black</h3><p>#111111</p><small>Main backgrounds and text</small></div>
+        <div class="color-card"><div class="color-swatch color-white"></div><h3>Soft White</h3><p>#F5F2ED</p><small>Page backgrounds and contrast</small></div>
+        <div class="color-card"><div class="color-swatch color-tan"></div><h3>Warm Tan</h3><p>#B68A4C</p><small>Buttons, details, and accents</small></div>
+        <div class="color-card"><div class="color-swatch color-gray"></div><h3>Steel Gray</h3><p>#6F7378</p><small>Secondary text and backgrounds</small></div>
       </div>
     </section>
 
-    <!-- TYPOGRAPHY/FONTS -->
     <section class="brand-section">
       <p class="section-label">03: Typography</p>
       <h2>Fonts</h2>
-
-      <p class="section-intro">
-        Kept it simple. Strong heading font, readable body font. Nothing that gets in the way.
-      </p>
-
+      <p class="section-intro">Kept it simple. Strong heading font, readable body font. Nothing that gets in the way.</p>
       <div class="font-grid">
-
-        <div class="font-card font-heading-example">
+        <div class="font-card">
           <p class="font-use">HEADLINE FONT</p>
           <h3>Montserrat Extra Bold</h3>
-          <div class="alphabet montserrat-example">
-            Aa Bb Cc<br>
-            123456789
-          </div>
-          <p>
-            Headings, titles, buttons, short statements.
-          </p>
+          <div class="alphabet">Aa Bb Cc<br>123456789</div>
+          <p>Headings, titles, buttons, short statements.</p>
         </div>
-
         <div class="font-card">
           <p class="font-use">BODY FONT</p>
           <h3>Inter</h3>
-          <div class="alphabet inter-example">
-            Aa Bb Cc<br>
-            123456789
-          </div>
-          <p>
-            Paragraphs, captions, descriptions, anything longer.
-          </p>
+          <div class="alphabet">Aa Bb Cc<br>123456789</div>
+          <p>Paragraphs, captions, descriptions, anything longer.</p>
         </div>
-
         <div class="font-card">
           <p class="font-use">ACCENT FONT</p>
           <h3>Playfair Display</h3>
-          <div class="alphabet playfair-example">
-            Aa Bb Cc<br>
-            123456789
-          </div>
-          <p>
-            Used sparingly when I want something to feel more editorial.
-          </p>
+          <div class="alphabet">Aa Bb Cc<br>123456789</div>
+          <p>Used sparingly when I want something to feel more editorial.</p>
         </div>
-
       </div>
     </section>
 
-    <!-- PHOTO STYLE -->
     <section class="brand-section">
       <p class="section-label">04: Photo Style</p>
       <h2>Photography Mood Board</h2>
-
-      <p class="section-intro">
-        Strong lighting, gym settings, outdoor shots, simple outfits, clean backgrounds.
-        Nothing too busy. That's the look.
-      </p>
-
+      <p class="section-intro">Strong lighting, gym settings, outdoor shots, simple outfits, clean backgrounds. Nothing too busy. That's the look.</p>
       <div class="photo-moodboard">
-
-        <figure>
-          <img
-            src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=900&q=80"
-            alt="Fitness training in a gym"
-          >
-          <figcaption>Gym environment</figcaption>
-        </figure>
-
-        <figure>
-          <img
-            src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=900&q=80"
-            alt="Athletic workout photography"
-          >
-          <figcaption>Training content</figcaption>
-        </figure>
-
-        <figure>
-          <img
-            src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=900&q=80"
-            alt="Outdoor athletic lifestyle"
-          >
-          <figcaption>Outdoor fitness</figcaption>
-        </figure>
-
-        <figure>
-          <img
-            src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=900&q=80"
-            alt="Running and active lifestyle"
-          >
-          <figcaption>Active lifestyle</figcaption>
-        </figure>
-
-        <figure>
-          <img
-            src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=900&q=80"
-            alt="Strength training photography"
-          >
-          <figcaption>Strength and detail</figcaption>
-        </figure>
-
-        <figure>
-          <img
-            src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?auto=format&fit=crop&w=900&q=80"
-            alt="Athletic portrait outdoors"
-          >
-          <figcaption>Natural lifestyle shot</figcaption>
-        </figure>
-
+        <figure><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=900&q=80" alt="Fitness training in a gym"><figcaption>Gym environment</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=900&q=80" alt="Athletic workout photography"><figcaption>Training content</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=900&q=80" alt="Outdoor athletic lifestyle"><figcaption>Outdoor fitness</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=900&q=80" alt="Running and active lifestyle"><figcaption>Active lifestyle</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=900&q=80" alt="Strength training photography"><figcaption>Strength and detail</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?auto=format&fit=crop&w=900&q=80" alt="Athletic portrait outdoors"><figcaption>Natural lifestyle shot</figcaption></figure>
       </div>
     </section>
 
-    <!-- STYLE GUIDE -->
     <section class="brand-section">
       <p class="section-label">05: Graphic Style</p>
       <h2>Graphic Direction</h2>
-
-      <p class="section-intro">
-        Clean, easy to read, big text, simple layouts. Black, white, gray, tan.
-        No heavy effects layered on top of photos.
-      </p>
-
+      <p class="section-intro">Clean, easy to read, big text, simple layouts. Black, white, gray, tan. No heavy effects layered on top of photos.</p>
       <div class="graphic-example-grid">
-
-        <div class="graphic-example quote-graphic">
-          <span>KEEP</span>
-          <strong>SHOWING UP.</strong>
-          <small>QUOTE POST</small>
-        </div>
-
-        <div class="graphic-example workout-graphic">
-          <small>MONDAY WORKOUT</small>
-          <strong>PUSH</strong>
-          <span>Chest · Shoulders · Triceps</span>
-        </div>
-
-        <div class="graphic-example number-graphic">
-          <span>01</span>
-          <strong>CONSISTENCY</strong>
-          <small>OVER MOTIVATION</small>
-        </div>
-
-        <div class="graphic-example promo-graphic">
-          <small>NEW CONTENT</small>
-          <strong>BUILT<br>DIFFERENT</strong>
-          <span>CHASE DYE</span>
-        </div>
-
-        <div class="graphic-example tip-graphic">
-          <span>QUICK TIP</span>
-          <strong>FOCUS ON<br>YOUR FORM</strong>
-          <small>NOT JUST THE WEIGHT</small>
-        </div>
-
-        <div class="graphic-example story-graphic">
-          <small>BEHIND THE SCENES</small>
-          <strong>SHOOT<br>DAY</strong>
-          <span>Swipe to see more →</span>
-        </div>
-
+        <div class="graphic-example quote-graphic"><span>KEEP</span><strong>SHOWING UP.</strong><small>QUOTE POST</small></div>
+        <div class="graphic-example workout-graphic"><small>MONDAY WORKOUT</small><strong>PUSH</strong><span>Chest · Shoulders · Triceps</span></div>
+        <div class="graphic-example number-graphic"><span>01</span><strong>CONSISTENCY</strong><small>OVER MOTIVATION</small></div>
+        <div class="graphic-example promo-graphic"><small>NEW CONTENT</small><strong>BUILT<br>DIFFERENT</strong><span>CHASE DYE</span></div>
+        <div class="graphic-example tip-graphic"><span>QUICK TIP</span><strong>FOCUS ON<br>YOUR FORM</strong><small>NOT JUST THE WEIGHT</small></div>
+        <div class="graphic-example story-graphic"><small>BEHIND THE SCENES</small><strong>SHOOT<br>DAY</strong><span>Swipe to see more →</span></div>
       </div>
-
       <div class="simple-answer">
-        <p>
-          These aren't finished ads. They're just showing the kind of layout, wording,
-          contrast, and colors I'd pull from when making real graphics.
-        </p>
+        <p>These aren't finished ads. They're just showing the kind of layout, wording, contrast, and colors I'd pull from when making real graphics.</p>
       </div>
     </section>
 
@@ -1969,312 +1678,106 @@ footer span { color: var(--lime); }
 </div>
 
 
-<!-- CREATE -->
+<!-- ===================== CREATE ===================== -->
 <div id="page-create" class="page">
-
   <div class="page-hero">
     <p class="eyebrow">CS6: Content Draft</p>
     <h1>CRE<em>ATE</em></h1>
   </div>
-
   <div class="container">
 
     <div class="create-header">
-
       <h2>Five Instagram Content Ideas</h2>
-
-      <p>
-        Five posts I put together for this assignment. Wanted them to actually feel different
-        from each other.
-      </p>
-
+      <p>Five posts I put together for this assignment. Wanted them to actually feel different from each other.</p>
       <div class="create-info">
-
-        <div>
-          <h4>Type of Content</h4>
-          <p>Instagram photo posts and graphics</p>
-        </div>
-
-        <div>
-          <h4>Software Used</h4>
-          <p>Canva </p>
-        </div>
-
-        <div>
-          <h4>Subject</h4>
-          <p>Fitness, "confidence" and modeling</p>
-        </div>
-
-        <div>
-          <h4>Audience</h4>
-          <p>People interested in fitness and self-improvement content</p>
-        </div>
-
-        <div>
-          <h4>Purpose</h4>
-          <p>Build trust, and engagement</p>
-        </div>
-
-        <div>
-          <h4>How It Fits the Strategy</h4>
-          <p>Help people find the page and actually want to stick around</p>
-        </div>
-
+        <div><h4>Type of Content</h4><p>Instagram photo posts and graphics</p></div>
+        <div><h4>Software Used</h4><p>Canva</p></div>
+        <div><h4>Subject</h4><p>Fitness, confidence, and modeling</p></div>
+        <div><h4>Audience</h4><p>People interested in fitness and self-improvement content</p></div>
+        <div><h4>Purpose</h4><p>Build trust and engagement</p></div>
+        <div><h4>How It Fits the Strategy</h4><p>Help people find the page and actually want to stick around</p></div>
       </div>
-
     </div>
 
     <div class="post-grid">
 
-      <!-- POST 1 -->
       <article class="post">
-
         <p class="post-number">Post 1</p>
-
-        <img
-          src="youdontneed.jpg"
-          alt="Instagram graphic about not needing a perfect workout"
-          loading="lazy"
-        >
-
+        <img src="youdontneed.jpg" alt="Instagram graphic about not needing a perfect workout" loading="lazy">
         <h3>You Don't Need a Perfect Workout</h3>
-
-        <p>
-          Sometimes just showing up is enough. For people who feel like they need
-          everything figured out before they even start.
-        </p>
-
+        <p>Sometimes just showing up is enough. For people who feel like they need everything figured out before they even start.</p>
         <div class="post-details">
-
-          <p>
-            <strong>Subject:</strong>
-            Workout motivation
-          </p>
-
-          <p>
-            <strong>Audience:</strong>
-            People who are new to fitness or nervous about getting started
-          </p>
-
-          <p>
-            <strong>Purpose:</strong>
-            Get people out of their heads and into the gym
-          </p>
-
-          <p>
-            <strong>How it moves people forward:</strong>
-            If someone sees this and feels understood, they're more likely to follow
-            for more of the same.
-          </p>
-
+          <p><strong>Subject:</strong> Workout motivation</p>
+          <p><strong>Audience:</strong> People who are new to fitness or nervous about getting started</p>
+          <p><strong>Purpose:</strong> Get people out of their heads and into the gym</p>
+          <p><strong>How it moves people forward:</strong> If someone sees this and feels understood, they're more likely to follow for more of the same.</p>
         </div>
-
       </article>
 
-      <!-- POST 2 -->
       <article class="post">
-
         <p class="post-number">Post 2</p>
-
-        <img
-          src="morethan.jpg"
-          alt="Lifestyle Instagram graphic showing more than fitness"
-          loading="lazy"
-        >
-
+        <img src="morethan.jpg" alt="Lifestyle Instagram graphic showing more than fitness" loading="lazy">
         <h3>More Than the Gym</h3>
-
-        <p>
-          Fitness is a big part of it, but I also want people to see the
-          modeling, travel, and just everyday stuff.
-        </p>
-
+        <p>Fitness is a big part of it, but I also want people to see the modeling, travel, and just everyday stuff.</p>
         <div class="post-details">
-
-          <p>
-            <strong>Subject:</strong>
-            Lifestyle and personal branding
-          </p>
-
-          <p>
-            <strong>Audience:</strong>
-            People who follow fitness, lifestyle, and modeling content
-          </p>
-
-          <p>
-            <strong>Purpose:</strong>
-            Show there's more to the page than gym content
-          </p>
-
-          <p>
-            <strong>How it moves people forward:</strong>
-            Makes the page feel like a real person, not just a fitness account.
-          </p>
-
+          <p><strong>Subject:</strong> Lifestyle and personal branding</p>
+          <p><strong>Audience:</strong> People who follow fitness, lifestyle, and modeling content</p>
+          <p><strong>Purpose:</strong> Show there's more to the page than gym content</p>
+          <p><strong>How it moves people forward:</strong> Makes the page feel like a real person, not just a fitness account.</p>
         </div>
-
       </article>
 
-      <!-- POST 3 -->
       <article class="post">
-
         <p class="post-number">Post 3</p>
-
-        <img
-          src="confidencetakes.jpg"
-          alt="Instagram graphic about practicing confidence"
-          loading="lazy"
-        >
-
+        <img src="confidencetakes.jpg" alt="Instagram graphic about practicing confidence" loading="lazy">
         <h3>Confidence Takes Practice</h3>
-
-        <p>
-          More reflective than the other posts. Confidence isn't something you just
-          have it builds over time, and I think people relate to that.
-        </p>
-
+        <p>More reflective than the other posts. Confidence isn't something you just have — it builds over time, and I think people relate to that.</p>
         <div class="post-details">
-
-          <p>
-            <strong>Subject:</strong>
-            Confidence and self-improvement
-          </p>
-
-          <p>
-            <strong>Audience:</strong>
-            Young adults who are interested in mindset and personal growth
-          </p>
-
-          <p>
-            <strong>Purpose:</strong>
-            Give people something real to connect with
-          </p>
-
-          <p>
-            <strong>How it moves people forward:</strong>
-            Shows something beyond the physical. People connect with the mindset
-            side as much as the fitness side.
-          </p>
-
+          <p><strong>Subject:</strong> Confidence and self-improvement</p>
+          <p><strong>Audience:</strong> Young adults who are interested in mindset and personal growth</p>
+          <p><strong>Purpose:</strong> Give people something real to connect with</p>
+          <p><strong>How it moves people forward:</strong> Shows something beyond the physical. People connect with the mindset side as much as the fitness side.</p>
         </div>
-
       </article>
 
-     <!-- POST 4 -->
-<article class="post">
+      <article class="post">
+        <p class="post-number">Post 4</p>
+        <img src="bts.jpg" alt="Instagram graphic showing behind the scenes of a shoot" loading="lazy">
+        <h3>Behind the Scenes</h3>
+        <p>Most people only see the finished product. This one pulls back the curtain a bit — what actually goes into getting a shot.</p>
+        <div class="post-details">
+          <p><strong>Subject:</strong> Content creation process</p>
+          <p><strong>Audience:</strong> Current followers and people interested in modeling or content creation</p>
+          <p><strong>Purpose:</strong> Show the process, not just the result</p>
+          <p><strong>How it moves people forward:</strong> People trust you more when they see how the sausage is made. Keeps current followers in the loop on what's coming.</p>
+        </div>
+      </article>
 
-  <p class="post-number">Post 4</p>
-
-  <img
-    src="bts.jpg"
-    alt="Instagram graphic showing behind the scenes of a shoot"
-    loading="lazy"
-  >
-
-  <h3>Behind the Scenes</h3>
-
-  <p>
-    Most people only see the finished product. This one pulls back the curtain
-    a bit what actually goes into getting a shot.
-  </p>
-
-  <div class="post-details">
-
-    <p>
-      <strong>Subject:</strong>
-      Content creation process
-    </p>
-
-    <p>
-      <strong>Audience:</strong>
-      Current followers and people interested in modeling or content creation
-    </p>
-
-    <p>
-      <strong>Purpose:</strong>
-      Show the process, not just the result
-    </p>
-
-    <p>
-      <strong>How it moves people forward:</strong>
-      People trust you more when they see how the sausage is made.
-      Keeps current followers in the loop on what's coming.
-    </p>
-
-  </div>
-
-</article>
-
- <!-- POST 5 -->
-<article class="post">
-
-  <p class="post-number">Post 5</p>
-
-  <img
-    src="smallwins.jpg"
-    alt="Instagram graphic about small wins adding up"
-    loading="lazy"
-  >
-
-  <h3>Small Wins Add Up</h3>
-
-  <p>
-    Progress usually isn't from one big moment. It's the small stuff done
-    consistently. Learned that through fitness, but it applies everywhere.
-  </p>
-
-  <div class="post-details">
-
-    <p>
-      <strong>Subject:</strong>
-      Consistency and progress
-    </p>
-
-    <p>
-      <strong>Audience:</strong>
-      Fitness beginners and people working toward personal goals
-    </p>
-
-    <p>
-      <strong>Purpose:</strong>
-      Remind people that small, consistent effort actually adds up
-    </p>
-
-    <p>
-      <strong>How it moves people forward:</strong>
-      Realistic and relatable. Makes people want to keep following
-      for advice that doesn't feel out of reach.
-    </p>
-
-  </div>
-
-</article>
+      <article class="post">
+        <p class="post-number">Post 5</p>
+        <img src="smallwins.jpg" alt="Instagram graphic about small wins adding up" loading="lazy">
+        <h3>Small Wins Add Up</h3>
+        <p>Progress usually isn't from one big moment. It's the small stuff done consistently. Learned that through fitness, but it applies everywhere.</p>
+        <div class="post-details">
+          <p><strong>Subject:</strong> Consistency and progress</p>
+          <p><strong>Audience:</strong> Fitness beginners and people working toward personal goals</p>
+          <p><strong>Purpose:</strong> Remind people that small, consistent effort actually adds up</p>
+          <p><strong>How it moves people forward:</strong> Realistic and relatable. Makes people want to keep following for advice that doesn't feel out of reach.</p>
+        </div>
+      </article>
 
     </div>
 
     <div class="reflection">
-
       <h2>How These Fit My Overall Strategy</h2>
-
-      <p>
-        These aren't random. Some introduce who I am, some show the process,
-        some go a little deeper. If someone landed on my page for the first time
-        and scrolled through these, they'd get a pretty good read on what the
-        brand is about.
-      </p>
-
-      <p>
-        The first couple build awareness and get people connected to the message.
-        The lifestyle and behind-the-scenes ones build trust because they show more
-        personality. The end goal is turning new visitors into followers and making
-        the page something brands and agencies actually want to work with.
-      </p>
-
+      <p>These aren't random. Some introduce who I am, some show the process, some go a little deeper. If someone landed on my page for the first time and scrolled through these, they'd get a pretty good read on what the brand is about.</p>
+      <p>The first couple build awareness and get people connected to the message. The lifestyle and behind-the-scenes ones build trust because they show more personality. The end goal is turning new visitors into followers and making the page something brands and agencies actually want to work with.</p>
     </div>
 
   </div>
-
 </div>
+
+
 <!-- ===================== PRODUCE ===================== -->
 <div id="page-produce" class="page">
 
@@ -2287,7 +1790,7 @@ footer span { color: var(--lime); }
 
     <div class="produce-header">
       <h2>Five TikTok / Instagram Reels</h2>
-      <p>Short-form vertical video content built around fitness, lifestyle, and personal brand. Each clip is shot to feel natural real gym footage, real moments.</p>
+      <p>Short-form vertical video content built around fitness, lifestyle, and personal brand. Each clip is shot to feel natural — real gym footage, real moments, nothing overproduced.</p>
     </div>
 
     <!-- HEADER INFO -->
@@ -2329,7 +1832,7 @@ footer span { color: var(--lime); }
           Your browser does not support the video tag.
         </video>
         <h3>Gym Session</h3>
-        <p>Raw training footage showing the actual work. No voiceover, just the grind.</p>
+        <p>Raw training footage showing the actual work. No voiceover, no script — just the grind.</p>
         <div class="video-details">
           <p><strong>Subject:</strong> Workout / training content</p>
           <p><strong>Audience:</strong> Fitness enthusiasts looking for motivation and training inspo</p>
@@ -2463,11 +1966,6 @@ function showPage(id) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 </script>
-
-</body>
-</html>
-
-
 
 </body>
 </html>
