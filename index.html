@@ -1271,6 +1271,197 @@ footer span { color: var(--lime); }
 }
 
 /* =====================
+   WRITE TAB
+   ===================== */
+
+.write-header {
+  margin-bottom: 56px;
+}
+
+.write-header h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 28px;
+  letter-spacing: 0.06em;
+  color: var(--white);
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.write-header > p {
+  font-size: 15px;
+  color: var(--mid);
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+.write-meta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  margin-bottom: 56px;
+}
+
+.write-meta > div {
+  background: var(--elevated);
+  padding: 20px 24px;
+}
+
+.write-meta h4 {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--lime);
+  margin-bottom: 8px;
+}
+
+.write-meta p {
+  font-size: 13.5px;
+  color: var(--mid);
+  font-weight: 300;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.newsletter-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 56px;
+}
+
+.newsletter-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.newsletter-card-header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: stretch;
+  border-bottom: 1px solid var(--border);
+}
+
+.newsletter-number {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 72px;
+  color: rgba(200,244,0,0.06);
+  line-height: 1;
+  padding: 24px 28px;
+  border-right: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  min-width: 100px;
+}
+
+.newsletter-subject-block {
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+}
+
+.newsletter-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--lime);
+}
+
+.newsletter-subject {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  line-height: 1.15;
+}
+
+.newsletter-preview {
+  font-size: 13px;
+  color: var(--mid);
+  font-weight: 300;
+  font-style: italic;
+}
+
+.newsletter-body {
+  padding: 36px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.newsletter-body p {
+  font-size: 15px;
+  color: var(--mid);
+  font-weight: 300;
+  line-height: 1.85;
+  margin: 0;
+}
+
+.newsletter-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.newsletter-body ul li {
+  font-size: 14.5px;
+  color: var(--mid);
+  font-weight: 300;
+  line-height: 1.75;
+  padding-left: 20px;
+  position: relative;
+}
+
+.newsletter-body ul li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--lime);
+  font-size: 12px;
+}
+
+.newsletter-body ul li strong {
+  color: var(--white);
+  font-weight: 500;
+}
+
+.newsletter-callout {
+  background: var(--elevated);
+  border-left: 3px solid var(--lime);
+  padding: 18px 22px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--lime);
+}
+
+.newsletter-sign {
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  font-size: 13px;
+  color: var(--mid);
+  font-weight: 300;
+}
+
+.newsletter-sign strong {
+  display: block;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  color: var(--white);
+  margin-top: 4px;
+}
+
+/* =====================
    RESPONSIVE
    ===================== */
 
@@ -1299,6 +1490,11 @@ footer span { color: var(--lime); }
   .video-grid { grid-template-columns: 1fr; }
   .video-grid .video-card:last-child:nth-child(odd) { grid-column: auto; max-width: 100%; }
   .produce-info { grid-template-columns: repeat(2, 1fr); }
+  .write-meta { grid-template-columns: repeat(2, 1fr); }
+  .newsletter-card-header { grid-template-columns: 1fr; }
+  .newsletter-number { display: none; }
+  .newsletter-body { padding: 24px 20px; }
+  .newsletter-subject-block { padding: 20px; }
 }
 </style>
 </head>
@@ -1929,11 +2125,139 @@ footer span { color: var(--lime); }
     <p class="eyebrow">CS8: Written Content</p>
     <h1>WR<em>ITE</em></h1>
   </div>
-  <div class="coming-soon">
-    <div class="cs-number">08</div>
-    <h2>Coming Soon</h2>
-    <p>All written content for the brand: athlete bio, website copy, social captions, a press release, newsletter, blog posts, and brand pitch copy for agencies and sponsors.</p>
-    <div class="status-pill"><span class="status-dot"></span>In Progress</div>
+
+  <div class="container">
+
+    <div class="write-header">
+      <h2>Three Newsletters</h2>
+<div
+    <!-- META INFO -->
+    <div class="write-meta">
+      <div>
+        <h4>Type of Content</h4>
+        <p>Email Newsletter</p>
+      </div>
+      <div>
+        <h4>Software Used</h4>
+        <p>Google Docs</p>
+      </div>
+      <div>
+        <h4>Subject</h4>
+        <p>Training recaps, mindset, and real-life moments from me (Chase Dye) </p>
+      </div>
+      <div>
+        <h4>Audience</h4>
+        <p>Existing followers and subscribers who opted in, plus brand partners and agencies</p>
+      </div>
+      <div>
+        <h4>Purpose / Objective</h4>
+        <p>Keep followers engaged between posts and give brand partners a view into character</p>
+      </div>
+      <div>
+        <h4>How It Drives the Funnel</h4>
+        <p>Nurtures casual followers into loyal readers. Puts the brand in front of potential partners directly, without waiting for them to find it.</p>
+      </div>
+    </div>
+
+    <!-- NEWSLETTER STACK -->
+    <div class="newsletter-stack">
+
+      <!-- NEWSLETTER 1 -->
+      <div class="newsletter-card">
+        <div class="newsletter-card-header">
+          <div class="newsletter-number">01</div>
+          <div class="newsletter-subject-block">
+            <span class="newsletter-label">Newsletter 1</span>
+            <div class="newsletter-subject">I tried a HYROX workout. It got me in the best way.</div>
+            <div class="newsletter-preview">A lot of running, and a fall race on the horizon.</div>
+          </div>
+        </div>
+        <div class="newsletter-body">
+          <p>Hey,</p>
+          <p>I've been training for a HYROX race this fall. If you don't know what that is, it's a fitness race that combines running with functional movements back to back. The whole thing is designed to test whether your cardio and your strength can hold up at the same time.</p>
+          <p>This week I did a full run-through of the race sequence to see where I actually stand. Here's what that looked like:</p>
+          <ul>
+            <li>1 km run to start</li>
+            <li><strong>1,000 m SkiErg</strong> — then another 1 km run</li>
+            <li><strong>50 m Sled Push</strong> — then another 1 km run</li>
+            <li><strong>50 m Sled Pull</strong> — then another 1 km run</li>
+            <li><strong>80 m Burpee Broad Jumps</strong> — then another 1 km run</li>
+            <li><strong>1,000 m Row</strong> — then another 1 km run</li>
+            <li><strong>200 m Farmers Carry with kettlebells</strong> — then another 1 km run</li>
+            <li><strong>100 m Sandbag Walking Lunges</strong> — then another 1 km run</li>
+            <li><strong>100 Wall Balls</strong> to finish</li>
+          </ul>
+          <p>Every station has a 1 km run attached to it. Your legs are already cooked from running and then you have to push a sled or carry a sandbag 100 meters. It's a different kind of hard than anything I do in a regular training week.</p>
+          <p>Insanely challenging and also exactly what I needed.</p>
+          <p>There's a version of training where you only do what's comfortable or what you're already good at, and you never really find out where your limits are. This showed me exactly where I need to improve before the fall and gave me something real to work toward.</p>
+          <p>That's the whole point.</p>
+          <div class="newsletter-callout">KEEP GRINDING</div>
+          <div class="newsletter-sign"><strong>Chase</strong></div>
+        </div>
+      </div>
+
+      <!-- NEWSLETTER 2 -->
+      <div class="newsletter-card">
+        <div class="newsletter-card-header">
+          <div class="newsletter-number">02</div>
+          <div class="newsletter-subject-block">
+            <span class="newsletter-label">Newsletter 2</span>
+            <div class="newsletter-subject">Putting the phone down is harder than any workout I've done.</div>
+            <div class="newsletter-preview">Something I've been working on in therapy that's tougher than it sounds.</div>
+          </div>
+        </div>
+        <div class="newsletter-body">
+          <p>Hey Guys, </p>
+          <p>I want to share some thoughts that have nothing to do with lifting. I've been working on a couple of things in therapy lately.</p>
+          <p>Slowing my thoughts down. Sitting with the uncomfortable ones instead of running from them.</p>
+          <p>That's it and I know it sounds simple but it's not, and if most people were honest with themselves they would agree.</p>
+          <p>Here's what it looks like for me in practice: a hard thought comes up, something I don't really want to deal with, and instead of letting it run, I just sit there. NO DISTRACTIONS which means no phone, no scrolling, no music, nothing to fill the space. Just me and whatever my brain is trying to work through.</p>
+          <p>The temptation to reach for my phone in those moments is real. It's sitting right there. One tap and I'm somewhere else completely. The problem is I know what comes after a long scrolling session. My head feels worse, not better. Whatever I was avoiding is still sitting there waiting, except now I've also wasted an hour and feel worse about that too.</p>
+          <p>Numbing out isn't rest. It just delays the mental work overall.</p>
+          <p>Couple things I've noticed from actually sitting with the hard stuff:</p>
+          <ul>
+            <li>The thoughts are usually less scary once you stop running from them</li>
+            <li>Your mind will actually work through things if you give it space to do it</li>
+            <li>The discomfort doesn't last as long as you expect it to</li>
+            <li>You come out of it feeling clearer, not drained</li>
+          </ul>
+          <p>The gym taught me that discomfort is where growth happens. Turns out that's true outside of it too. The mental reps are just less visible.</p>
+          <p>If you're someone who reaches for your phone the second things get quiet, I'm not judging you. I do it too. I'm just getting more intentional about when I let myself and when I don't.</p>
+          <div class="newsletter-callout">KEEP GRINDING,</div>
+          <div class="newsletter-sign"><strong>Chase</strong></div>
+        </div>
+      </div>
+
+      <!-- NEWSLETTER 3 -->
+      <div class="newsletter-card">
+        <div class="newsletter-card-header">
+          <div class="newsletter-number">03</div>
+          <div class="newsletter-subject-block">
+            <span class="newsletter-label">Newsletter 3</span>
+            <div class="newsletter-subject">Worked out on vacation. Here's how that actually went.</div>
+            <div class="newsletter-preview">Three sessions, one new training partner, and a Barry's class I wasn't ready for.</div>
+          </div>
+        </div>
+        <div class="newsletter-body">
+          <p>Hey Ya'll,</p>
+          <p>This past week I was traveling. Not a training trip or anything fancy, just a vacation with a couple shoots planned in. The kind where the easy thing would've been to take the whole week off and just not think about it.</p>
+          <p>Didn't do that. NOT AN OPTION.</p>
+          <p>Here's what my week actually looked like:</p>
+          <ul>
+            <li><strong>Chest and triceps</strong> — Got in a solid push day. One of those sessions where everything clicked. Hit it hard and felt good coming out of it.</li>
+            <li><strong>Back day with someone new</strong> — This one was a standout. Trained with someone I hadn't lifted with before and it pushed me in ways my usual sessions don't. Tried movements I wouldn't have gravitated toward on my own. Having someone next to you who trains differently is one of the better ways to break out of a routine without even planning to.</li>
+            <li><strong>Barry's Bootcamp</strong> — If you haven't done one, it's interval treadmill work paired with dumbbell movements on the floor. It's humbling. Different kind of hard than lifting, but that's the point.</li>
+          </ul>
+          <p>Three sessions in a week where I was traveling, out of my normal environment, with no real routine to lean on.</p>
+          <p>The honest part? That's when it counts most. Getting it done when it's inconvenient is what makes it mean something for me. And when I did go relax and lay on the beach, I felt like I earned it. It's a different kind of rest than just doing nothing because you have nothing else going on.</p>
+          <p>The discipline doesn't stop when the trip starts.</p>
+          <div class="newsletter-callout">KEEP GRINDING,</div>
+          <div class="newsletter-sign"><strong>Chase</strong></div>
+        </div>
+      </div>
+
+    </div><!-- end newsletter-stack -->
+
   </div>
 </div>
 
